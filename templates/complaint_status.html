@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Complaint Status</title>
+    {% load staticfiles %}
+    <link rel="stylesheet" type="text/css" href="{% static 'bootstrap.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+</head>
+<body>
+     <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+        <div class="container-fluid">
+            <label style="font-size: 20px;font-weight: bold">Complaint Status Page</label>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="/index" style="margin-right: 30px; font-size: 20px; font-weight: bold">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/logoutrequest" style="font-size: 20px; font-weight: bold">Logout</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="sidebar">
+        <header style="font-size: 22px;color: white;text-align: center;line-height: 70px;background: #063146;user-select: none">Menu</header>
+            <ul style="padding: 0">
+                <li style="list-style-type: none"><a href="/userprofile" style="text-decoration: none">User Account</a> </li>
+                <li style="list-style-type: none"><a href="/complaintregistration/" style="text-decoration: none">Register Complaint</a> </li>
+                <li style="list-style-type: none"><a href="/complaintstatus" style="text-decoration: none">View Complaint Status</a> </li>
+            </ul>
+    </div>
+</body>
+</html>
